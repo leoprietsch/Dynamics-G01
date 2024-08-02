@@ -20,13 +20,13 @@ namespace DataverseModel
 		
 		public static class Fields
 		{
-			public const string version = "version";
+			public const string Version = "Version";
 			public const string Target = "Target";
 		}
 		
 		public const string ActionLogicalName = "Analyze";
 		
-		public string version
+		public string Version
 		{
 			get
 			{
@@ -67,7 +67,7 @@ namespace DataverseModel
 		public AnalyzeRequest()
 		{
 			this.RequestName = "Analyze";
-			this.version = default(string);
+			this.Version = default(string);
 			this.Target = default(Microsoft.Xrm.Sdk.EntityReference);
 		}
 	}
@@ -79,7 +79,7 @@ namespace DataverseModel
 		
 		public static class Fields
 		{
-			public const string response = "response";
+			public const string Response = "Response";
 		}
 		
 		public const string ActionLogicalName = "Analyze";
@@ -88,7 +88,7 @@ namespace DataverseModel
 		{
 		}
 		
-		public string response
+		public string Response
 		{
 			get
 			{
@@ -103,7 +103,7 @@ namespace DataverseModel
 			}
 			set
 			{
-				this.Results["response"] = value;
+				this.Results["Response"] = value;
 			}
 		}
 	}

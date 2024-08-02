@@ -100,8 +100,11 @@
     <Compile Include="Earlybound\Entities\zup_categoria.cs" />
     <Compile Include="Earlybound\Entities\zup_classificacao.cs" />
     <Compile Include="Earlybound\Entities\zup_lab_ocorrencia.cs" />
+    <Compile Include="Earlybound\Entities\zup_projeto.cs" />
+    <Compile Include="Earlybound\Entities\zup_responsavel.cs" />
     <Compile Include="Earlybound\Entities\zup_subcategoria.cs" />
     <Compile Include="Earlybound\Entities\zup_subcategoria_Queue.cs" />
+    <Compile Include="Earlybound\Entities\zup_tarefa.cs" />
     <Compile Include="Earlybound\Entities\zup_virtual_post.cs" />
     <Compile Include="Earlybound\EntityOptionSetEnum.cs" />
     <Compile Include="Earlybound\Messages\Analyze.cs" />

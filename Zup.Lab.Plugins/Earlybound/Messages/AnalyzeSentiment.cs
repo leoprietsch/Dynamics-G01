@@ -20,14 +20,14 @@ namespace DataverseModel
 		
 		public static class Fields
 		{
-			public const string text = "text";
-			public const string modelId = "modelId";
-			public const string language = "language";
+			public const string Text = "Text";
+			public const string ModelId = "ModelId";
+			public const string Language = "Language";
 		}
 		
 		public const string ActionLogicalName = "AnalyzeSentiment";
 		
-		public string text
+		public string Text
 		{
 			get
 			{
@@ -46,7 +46,7 @@ namespace DataverseModel
 			}
 		}
 		
-		public string modelId
+		public string ModelId
 		{
 			get
 			{
@@ -65,7 +65,7 @@ namespace DataverseModel
 			}
 		}
 		
-		public string language
+		public string Language
 		{
 			get
 			{
@@ -87,7 +87,7 @@ namespace DataverseModel
 		public AnalyzeSentimentRequest()
 		{
 			this.RequestName = "AnalyzeSentiment";
-			this.text = default(string);
+			this.Text = default(string);
 		}
 	}
 	
@@ -98,9 +98,9 @@ namespace DataverseModel
 		
 		public static class Fields
 		{
-			public const string documentScores = "documentScores";
-			public const string sentences = "sentences";
-			public const string sentiment = "sentiment";
+			public const string DocumentsCores = "DocumentsCores";
+			public const string Sentences = "Sentences";
+			public const string Sentiment = "Sentiment";
 		}
 		
 		public const string ActionLogicalName = "AnalyzeSentiment";
@@ -109,7 +109,7 @@ namespace DataverseModel
 		{
 		}
 		
-		public Microsoft.Xrm.Sdk.Entity documentScores
+		public Microsoft.Xrm.Sdk.Entity DocumentsCores
 		{
 			get
 			{
@@ -124,11 +124,11 @@ namespace DataverseModel
 			}
 			set
 			{
-				this.Results["documentScores"] = value;
+				this.Results["DocumentsCores"] = value;
 			}
 		}
 		
-		public Microsoft.Xrm.Sdk.EntityCollection sentences
+		public Microsoft.Xrm.Sdk.EntityCollection Sentences
 		{
 			get
 			{
@@ -143,11 +143,11 @@ namespace DataverseModel
 			}
 			set
 			{
-				this.Results["sentences"] = value;
+				this.Results["Sentences"] = value;
 			}
 		}
 		
-		public string sentiment
+		public string Sentiment
 		{
 			get
 			{
@@ -162,7 +162,7 @@ namespace DataverseModel
 			}
 			set
 			{
-				this.Results["sentiment"] = value;
+				this.Results["Sentiment"] = value;
 			}
 		}
 	}

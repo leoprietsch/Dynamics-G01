@@ -18,9 +18,9 @@
     <AdjustCasingForEnumOptions>true</AdjustCasingForEnumOptions>
     <AttributeBlacklist />
     <BuilderSettingsJsonRelativePath>builderSettings.json</BuilderSettingsJsonRelativePath>
-    <CamelCaseClassNames>false</CamelCaseClassNames>
+    <CamelCaseClassNames>true</CamelCaseClassNames>
     <CamelCaseCustomWords />
-    <CamelCaseMemberNames>false</CamelCaseMemberNames>
+    <CamelCaseMemberNames>true</CamelCaseMemberNames>
     <CamelCaseNamesDictionaryRelativePath>DLaB.EarlyBoundGeneratorV2\DLaB.Dictionary.txt</CamelCaseNamesDictionaryRelativePath>
     <CleanupCrmSvcUtilLocalOptionSets>false</CleanupCrmSvcUtilLocalOptionSets>
     <CreateOneFilePerAction>true</CreateOneFilePerAction>
@@ -28,15 +28,9 @@
     <CreateOneFilePerOptionSet>true</CreateOneFilePerOptionSet>
     <DeleteFilesFromOutputFolders>false</DeleteFilesFromOutputFolders>
     <EntitiesToSkip />
-    <EntitiesWhitelist>account|
-contact|
-queue|
-zup_categoria|
-zup_classificacao|
-zup_lab_ocorrencia|
-zup_subcategoria|
-zup_subcategoria_queue|
-zup_virtual_post</EntitiesWhitelist>
+    <EntitiesWhitelist>zup_projeto|
+zup_responsavel|
+zup_tarefa</EntitiesWhitelist>
     <EntityAttributeSpecifiedNames />
     <EntityClassNameOverrides />
     <EntityPrefixesToSkip />

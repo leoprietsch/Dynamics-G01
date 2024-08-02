@@ -18,25 +18,6 @@ namespace Zup.Lab.Tests.Tests {
             Assert.IsTrue(me.UserId != null);
         }
 
-
-        [TestMethod]
-        public void T002_LinqExample()
-        {
-            using (var context = new DataverseContext(service))
-            {
-                var ocorrencias = context.zup_lab_ocorrenciaSet
-                    .Where(x => x.StatusCode == zup_lab_ocorrencia_StatusCode.Pendente)
-                    .Select(x => new zup_lab_ocorrencia()
-                    {
-                        Id = x.Id,
-                        zup_cliente = x.zup_cliente,
-                        zup_subcategoriaid = x.zup_subcategoriaid
-                    }).ToList();
-
-                Assert.IsTrue(ocorrencias.Count() > 0);
-            }
-        }
-
         [TestMethod]
         public void T003_QueryExpression()
         {

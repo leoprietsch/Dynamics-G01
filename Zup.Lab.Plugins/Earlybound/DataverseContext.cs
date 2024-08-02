@@ -30,101 +30,35 @@ namespace DataverseModel
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.Account"/> entities.
+		/// Gets a binding to the set of all <see cref="DataverseModel.ZUp_ProjetO"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.Account> AccountSet
+		public System.Linq.IQueryable<DataverseModel.ZUp_ProjetO> ZUp_ProjetOSet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.Account>();
+				return this.CreateQuery<DataverseModel.ZUp_ProjetO>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.Contact"/> entities.
+		/// Gets a binding to the set of all <see cref="DataverseModel.ZUp_ResPoNSaveL"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.Contact> ContactSet
+		public System.Linq.IQueryable<DataverseModel.ZUp_ResPoNSaveL> ZUp_ResPoNSaveLSet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.Contact>();
+				return this.CreateQuery<DataverseModel.ZUp_ResPoNSaveL>();
 			}
 		}
 		
 		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.Queue"/> entities.
+		/// Gets a binding to the set of all <see cref="DataverseModel.ZUp_TARefA"/> entities.
 		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.Queue> QueueSet
+		public System.Linq.IQueryable<DataverseModel.ZUp_TARefA> ZUp_TARefASet
 		{
 			get
 			{
-				return this.CreateQuery<DataverseModel.Queue>();
-			}
-		}
-		
-		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.zup_categoria"/> entities.
-		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.zup_categoria> zup_categoriaSet
-		{
-			get
-			{
-				return this.CreateQuery<DataverseModel.zup_categoria>();
-			}
-		}
-		
-		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.zup_classificacao"/> entities.
-		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.zup_classificacao> zup_classificacaoSet
-		{
-			get
-			{
-				return this.CreateQuery<DataverseModel.zup_classificacao>();
-			}
-		}
-		
-		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.zup_lab_ocorrencia"/> entities.
-		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.zup_lab_ocorrencia> zup_lab_ocorrenciaSet
-		{
-			get
-			{
-				return this.CreateQuery<DataverseModel.zup_lab_ocorrencia>();
-			}
-		}
-		
-		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.zup_subcategoria"/> entities.
-		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.zup_subcategoria> zup_subcategoriaSet
-		{
-			get
-			{
-				return this.CreateQuery<DataverseModel.zup_subcategoria>();
-			}
-		}
-		
-		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.zup_subcategoria_Queue"/> entities.
-		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.zup_subcategoria_Queue> zup_subcategoria_QueueSet
-		{
-			get
-			{
-				return this.CreateQuery<DataverseModel.zup_subcategoria_Queue>();
-			}
-		}
-		
-		/// <summary>
-		/// Gets a binding to the set of all <see cref="DataverseModel.zup_virtual_post"/> entities.
-		/// </summary>
-		public System.Linq.IQueryable<DataverseModel.zup_virtual_post> zup_virtual_postSet
-		{
-			get
-			{
-				return this.CreateQuery<DataverseModel.zup_virtual_post>();
+				return this.CreateQuery<DataverseModel.ZUp_TARefA>();
 			}
 		}
 	}
