@@ -120,6 +120,7 @@
     <Compile Include="Step\Action\Escalate.cs" />
     <Compile Include="Step\Incident\Create.cs" />
     <Compile Include="Step\Incident\IncidentStep.cs" />
+    <Compile Include="Step\Projeto\Step.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
