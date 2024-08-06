@@ -20,11 +20,27 @@ namespace Zup.Lab.Plugins.Step.Projeto
 
                 if (entity.LogicalName != "zup_projeto") return;
 
-                int duracao = (int) entity["zup_duracao"];
+                int duracao;
+                DateTime dataInicio;
 
-                DateTime dataInicio = (DateTime) entity["zup_datadeinicio"];
+                if (context.MessageName == "create")
+                {
+                    duracao = (int)entity["zup_duracao"];
+                    dataInicio = (DateTime)entity["zup_datadeinicio"];
+                    entity["zup_datadeterminoprevista"] = dataInicio.AddDays(duracao);
+                }
+                else
+                {
+                    var postImage = context.PostEntityImages["postImage"];
 
-                entity["zup_datadeterminoprevista"] = dataInicio.AddDays(duracao);
+                    duracao = (int)postImage["zup_duracao"];
+                    dataInicio = (DateTime)postImage["zup_datadeinicio"];
+                    var update = new Entity(entity.LogicalName, entity.Id);
+                    update["zup_datadeterminoprevista"] = dataInicio.AddDays(duracao);
+                    service.Update(update);
+                }
+
+                
             }
             catch (Exception ex)
             {
