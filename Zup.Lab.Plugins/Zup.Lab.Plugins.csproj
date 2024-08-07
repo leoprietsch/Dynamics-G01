@@ -122,6 +122,9 @@
     <Compile Include="Step\Incident\IncidentStep.cs" />
     <Compile Include="Step\Projeto\ValidaFinalizacao.cs" />
     <Compile Include="Step\Projeto\Step.cs" />
+    <Compile Include="Step\Tarefa\ValidaAlteracaoProjeto.cs" />
+    <Compile Include="Step\Tarefa\Delete.cs" />
+    <Compile Include="Step\Tarefa\Validacao.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
