@@ -17,13 +17,11 @@ namespace Zup.Lab.Plugins.Step.Projeto
             try
             {
                 Entity entity = (Entity)context.InputParameters["Target"];
-
                 if (entity.LogicalName != "zup_projeto") return;
-
                 int duracao;
                 DateTime dataInicio;
-
-                if (context.MessageName == "create")
+                tracingService.Trace(context.MessageName);
+                if (context.MessageName.ToLower() == "create")
                 {
                     duracao = (int)entity["zup_duracao"];
                     dataInicio = (DateTime)entity["zup_datadeinicio"];
